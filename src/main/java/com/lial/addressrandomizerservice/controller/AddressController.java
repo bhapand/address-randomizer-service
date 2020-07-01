@@ -12,7 +12,10 @@ public class AddressController {
     @Autowired
     private AddressService service;
 
-
+    /**
+     * Implementation of the get mapping at endpoint /randomizer/address
+     * @return
+     */
     @GetMapping("/randomizer/address")
     public Address getAddress() {
         return service.getRandomLocaleAddress();

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.*;
 
 /**
- * This class manages the business service to randomize Address data for the countries US, Canada, Mexico and Netherlands
+ * Manages the business service to randomize Address data for the countries US, Canada, Mexico and Netherlands
  */
 @Service
 public class AddressService {

@@ -1,5 +1,8 @@
 package com.lial.addressrandomizerservice.model;
 
+/**
+ * Model class for holding address objects
+ */
 public class Address {
 
     private String house;
