@@ -26,9 +26,6 @@ This is a Rest API service built using Java/spring boots that generates random a
 
 ## Visuals
 Using a tool like Postman or any browser a GET request can be made to the end point /randomizer/address.
-The response should be in the following format:
+The API should return address as below:
 
-![](src/main/resources/images/a01f2a88.png)
-![](src/main/resources/images/7d16ceb0.png)
-![](src/main/resources/images/8338ab90.png)
-![](src/main/resources/images/39c76bb2.png)
+![](src/main/resources/videos/AddressService.mov)
