@@ -1,7 +1,7 @@
 ## address-randomizer-service
 
 ## Description
-#### This is a Rest API service built using Java/spring boots that generates random address data for testing. The service generates random addresses for the following four countries, but can be easily extended to generate addresses for any locale/country.
+This is a Rest API service built using Java/spring boots that generates random address data for testing. The service generates random addresses for the following four countries, but can be easily extended to generate addresses for any locale/country.
 
 1. *US*
 1. *Canada*
@@ -21,11 +21,11 @@
    b. Using java -jar command (should have the jar created, use ```mvn package```)
    ```java -jar target/address-randomizer-service-0.0.1-SNAPSHOT.jar```
    
-1. By default the application runs on the default port *8080*, it can be changed at src/main/resources/application.properties by changing the value of server.port
+1. By default the application runs on the default port *8080*, it can be changed at ```src/main/resources/application.properties``` by changing the value of ```server.port```
 
 
 ## Visuals
-#### Using a tool like Postman or any browser a GET request can be made to the end point /randomizer/address.
+Using a tool like Postman or any browser a GET request can be made to the end point /randomizer/address.
 The response should be in the following format:
 
 ![](src/main/resources/images/a01f2a88.png)
