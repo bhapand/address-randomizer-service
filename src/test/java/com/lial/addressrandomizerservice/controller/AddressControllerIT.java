@@ -29,12 +29,8 @@ public class AddressControllerIT {
 
     @Test
     public void testStatusCode() throws JSONException {
-
         ResponseEntity<String> response = getResponse();
-        String expected = "{id:Course1,name:Spring,description:10 Steps}";
         Assert.assertTrue(response.getStatusCode().is2xxSuccessful());
-
-        //JSONAssert.assertEquals(expected, response.getBody(), false);
     }
 
 
@@ -45,7 +41,6 @@ public class AddressControllerIT {
 
         String expected = "{\"house\":\"[^\\s]+\",\"street\":\"(.*)+\",\"postalCode\":\"[^\\s]+\",\"city\":\"(.*)+\",\"county\":\"(.*)+\",\"state\":\"(.*)+\",\"stateCode\":\"(.*)+\",\"country\":\"^(United States|Mexico|Netherlands|Canada)$\",\"countryCode\":\"^(USA|MEX|NLD|CAN)$\"}";
 
-        //JSONAssert.assertEquals(expected, response.getBody(), false);
         System.out.println(response.getBody());
         JSONAssert.assertEquals(expected, response.getBody(),
                 new CustomComparator(
