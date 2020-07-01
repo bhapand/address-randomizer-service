@@ -32,6 +32,3 @@ The response should be in the following format:
 ![](src/main/resources/images/7d16ceb0.png)
 ![](src/main/resources/images/8338ab90.png)
 ![](src/main/resources/images/39c76bb2.png)
-
-Video:
-![](src/main/resources/video/AddressService.mov)
