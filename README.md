@@ -29,4 +29,4 @@ Visuals
 Using a tool like Postman or any browser a GET request can be made to the end point /randomizer/address.
 The response should be in the following format:
 
-![](.README_images/a01f2a88.png)
+![](src/main/resources/images/a01f2a88.png)
