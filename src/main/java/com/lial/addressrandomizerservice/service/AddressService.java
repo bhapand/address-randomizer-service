@@ -2,15 +2,22 @@ package com.lial.addressrandomizerservice.service;
 
 import com.github.javafaker.Faker;
 import com.lial.addressrandomizerservice.model.Address;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+/**
+ * This class manages the business service to randomize Address data for the countries US, Canada, Mexico and Netherlands
+ */
 @Service
 public class AddressService {
 
-    public Address getUSAddress() {
+    /**
+     * Gets the locale address randomly selecting one of the countries from the immutable list of US, Canada, Mexico and Netherlands
+     * using their locale display names
+     * @return Address generated
+     */
+    public Address getRandomLocaleAddress() {
 
         List<String> locales = Arrays.asList("en-US", "en-CA", "es-MX", "nl-NL");
         Random random = new Random();
@@ -18,6 +25,12 @@ public class AddressService {
         return getAddress(locale);
     }
 
+    /**
+     * Logic to randomize and generate test address data for a given locale
+     *
+     * @param locale
+     * @return Address generated
+     */
     private Address getAddress(String locale) {
         Faker randomizer = new Faker(new Locale(locale));
         Address address = new Address();
@@ -40,6 +53,12 @@ public class AddressService {
         return address;
     }
 
+    /**
+     * As required by the service maps a locale's coutry name and 3 letter iso code to be used by calling methods
+     *
+     * @param country
+     * @return Map of country and countryCodes as Key for respective locales
+     */
     private HashMap<String, String> getCountryMap(String country) {
         HashMap<String, String> map = new HashMap<>();
         switch (country) {

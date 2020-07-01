@@ -12,8 +12,9 @@ public class AddressController {
     @Autowired
     private AddressService service;
 
+
     @GetMapping("/randomizer/address")
     public Address getAddress() {
-        return service.getUSAddress();
+        return service.getRandomLocaleAddress();
     }
 }
