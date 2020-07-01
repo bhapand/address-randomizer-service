@@ -18,14 +18,16 @@ This is a Rest API service built using Java/spring boots that generates random a
    a. Using maven (from the root folder)
    ```mvn spring-boot:run```
    
-   b. Using java -jar command (should have the jar created, use ```mvn package```)
+   a. Using java -jar command (should have the jar created, use ```mvn package```)
    ```java -jar target/address-randomizer-service-0.0.1-SNAPSHOT.jar```
    
-1. By default the application runs on the default port *8080*, it can be changed at ```src/main/resources/application.properties``` by changing the value of ```server.port```
+1. By default the application runs on the default port ```8080```, it can be changed at ```src/main/resources/application.properties``` by changing the value of ```server.port```
 
 
 ## Visuals
-Using a tool like Postman or any browser a GET request can be made to the end point /randomizer/address.
+Using a tool like Postman or curl or any browser a GET request can be made to the end point /randomizer/address.
 The API should return address as below:
 
 ![](src/main/resources/videos/AddressService.mov)
+
+```curl -X GET http://localhost:8080/randomizer/address```
